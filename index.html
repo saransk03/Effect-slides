@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Effect Slides Using Swippers js</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <h1 class="text-white font-sans text-[30px] font-[700] capitalize">Effect slide and Dynamic content change</h1>
+
+    <div class="2xl:container mx-auto">
+        <div
+          class="w-[80%] grid grid-cols-1 lg:grid-cols-2 mx-auto mt-4 bg-indigo-900 px-10 py-7 rounded-[30px]"
+        >
+          <!-- Swiper -->
+          <div class="flex justify-center items-center py-3 px-6">
+            <div class="swiper-s mySwiper-s">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide flex flex-col justify-center items-center font-sans gap-2"
+                  data-name="Red color"
+                  data-details="Red is the color of passion and energy, symbolizing love and excitement. It grabs attention and can evoke strong emotions, making it a powerful choice in design."
+                >
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxvddSa5Dj_PJVGaPsmFHUftoQSdUYJmUqkg&s"
+                    alt=""
+                    class="h-[160px] w-[160px] rounded-[160px] md:h-[230px] md:w-[230px] md:rounded-[250px] object-cover shadow-lg shadow-black"
+                  />
+                  Red
+                </div>
+    
+                <div
+                  class="swiper-slide flex flex-col justify-center items-center font-sans gap-2"
+                  data-name="Blue color"
+                  data-details="Blue represents calmness and trust, often associated with stability and reliability.It's a popular choice for conveying professionalism and serenity in visuals"
+                >
+                  <img
+                  src="https://w0.peakpx.com/wallpaper/146/825/HD-wallpaper-sky-blue-pretty-hue-texture-color-abstract-sky-blue-thumbnail.jpg"
+                    
+                    alt=""
+                    class="h-[160px] w-[160px] rounded-[160px] md:h-[230px] md:w-[230px] md:rounded-[250px] object-cover shadow-lg shadow-black"
+                  />
+                    Blue
+                </div>
+    
+                <div
+                  class="swiper-slide flex flex-col justify-center items-center font-sans gap-2"
+                  data-name="Green color"
+                  data-details="Green embodies nature, growth, and renewal, giving a sense of balance and harmony.It often symbolizes health and tranquility, making it a calming and refreshing color.."
+                >
+                  <img
+                    src="https://htmlcolorcodes.com/assets/images/colors/neon-green-color-solid-background-1920x1080.png"
+                    alt=""
+                    class="h-[160px] w-[160px] rounded-[160px] md:h-[230px] md:w-[230px] md:rounded-[250px] object-cover shadow-lg shadow-black"
+                  />
+                  Green
+                </div>
+    
+                <div
+                  class="swiper-slide flex flex-col justify-center items-center font-sans gap-2"
+                  data-name="Orange color"
+                  data-details="Orange radiates warmth and enthusiasm, combining the energy of red with the cheerfulness of yellow. It's a lively color that sparks creativity and encourages action."
+                >
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWdhm481Pbg9u3aI63TqmLMMJUEJBmZAUMdA&s"
+                    alt=""
+                    class="h-[160px] w-[160px] rounded-[160px] md:h-[230px] md:w-[230px] md:rounded-[250px] object-cover shadow-lg shadow-black"
+                  />
+                  Orange
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div
+            class="flex flex-col justify-start items-start py-6"
+            data-aos="zoom-in-up"
+            data-aos-duration="2000"
+          >
+            <div class="flex flex-col">
+              <h1 id="content-name" class="text-[30px] font-sans font-[700] text-white">
+                <span class="text-[#336cfb]">Red</span> Color
+              </h1>
+              <p id="details" class="text-white font-sans">
+                Red is the color of passion and energy, symbolizing love and excitement. It grabs attention and can evoke strong emotions, making it a powerful choice in design.
+              </p>
+            </div>
+            <div class="mt-2">
+              <p class="text-slate-500 font-sans font-[700]">Swipe the card<i class="fa-solid fa-arrow-right-long px-1"></i></p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
